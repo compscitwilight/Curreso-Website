@@ -175,8 +175,15 @@ a {
 .profile-about-me {
     display: block;
 }
+.profile-about-me > hr {
+    border-width: .25px;
+}
 .profile-about-me > p {
+    margin: 5px;
     color: white;
+}
+.profile-about-me > form {
+    visibility: hidden;
 }
 .profile-about-me > form > textarea {
     font-family: sans-serif;
