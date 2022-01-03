@@ -4,6 +4,5 @@
     </footer>-->
 </body>
 <!-- js -->
-<script src="/js/global/header.js"></script>
 
 </html>
