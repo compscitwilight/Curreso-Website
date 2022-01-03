@@ -1,0 +1,370 @@
+/* global */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #26282C;
+}
+
+footer {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    height: 50%;
+    padding: 50px;
+    background-color: rgb(95, 95, 95);
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+::-moz-selection {
+    color: #777777;
+    background-color: white;
+}
+
+::selection {
+    color: #777777;
+    background-color: white;
+}
+
+.announcement-bar {
+    padding: 0px/*10px*/;
+    visibility: hidden;
+    width: auto;
+    background-color: orange;
+}
+.announcement-bar > p {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* not authorized */
+.not-authorized {
+    top: 50px;
+    width: 800px;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    border-width: 1.75px;
+    border-radius: 5px;
+    padding: 25px;
+    width: 512px;
+    height: 256px;
+    position: relative;
+    background-color: #2C3038;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #1C1E23;
+}
+.not-authorized > p {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* home page */
+.home-panel {
+    position: relative;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 25px;
+    width: 512px;
+    height: 256px;
+    left: 128px;
+}
+.home-panel > h2 {
+    font-family: sans-serif;
+    color: rgb(221, 221, 221);
+}
+.home-panel > form {
+    display: flex;
+    width: 0 auto;
+    color: black;
+}
+.home-panel > form > input {
+    position: relative;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #1B1D21;
+    left: 10px;
+    color: white;
+}
+.home > form > button {
+    display: flex;
+    position: relative;
+    left: 25px;
+}
+
+.friends {
+    position: relative;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 25px;
+    width: 256px;
+    height: 256px;
+    left: 652px;
+    bottom: 280px;
+}
+.friends > h3 {
+    margin: 5px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.guest-introduction {
+    position: relative;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 10px;
+    width: 512px;
+    height: 256px;
+    left: 660px;
+    bottom: 280px;
+}
+.guest-introduction > h3 {
+    font-family: sans-serif;
+    color: white;
+}
+.guest-introduction > p {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* profile */
+.profile-container {
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 2.5px;
+    width: 50%;
+    height: 50%;
+    left: 156px;
+}
+.profile-container > h3 {
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 1px;
+    color: white;
+}
+.profile-container > form {
+    padding: 1.75px;
+}
+.profile-container > p {
+    color: white;
+}
+
+.profile-container-admin {
+    margin: .5px;
+    width: 22px;
+    height: 22px;
+}
+
+.profile-about-me {
+    display: block;
+}
+.profile-about-me > p {
+    color: white;
+}
+.profile-about-me > form > textarea {
+    font-family: sans-serif;
+    color: white;
+    width: 500px;
+    height: 256px;
+    border-style: none;
+    margin: 3px;
+    background-color: #1C1E23;
+}
+.profile-about-me > form > button {
+    margin: 3px;
+}
+
+/* admin panel */
+.admin-panel {
+    margin: 1.5px;
+}
+
+/* buttons */
+.btn-small {
+    border-style: none;
+    border-radius: 2.5px;
+    color: whitesmoke;
+    background-color: #1B1D21;
+    padding: 1px;
+}
+.btn-small:hover {
+    cursor: pointer;
+}
+
+.btn-medium {
+    border-style: none;
+    border-radius: 2.5px;
+    color: whitesmoke;
+    background-color: #1B1D21;
+    padding: 2.5px;
+}
+.btn-medium:hover {
+    cursor: pointer;
+}
+
+.btn-large {
+    border-style: none;
+    border-radius: 2.5px;
+    color: whitesmoke;
+    background-color: #1B1D21;
+    padding: 4px;
+}
+.btn-large:hover {
+    cursor: pointer;
+}
+
+/* nav-bar */
+.nav-bar-top {
+    display: flex;
+    position: relative;
+    height: 0 auto;
+    padding: 5px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #1C1E23;
+    background-color: #2B2F35;
+}
+.nav-bar-top > form > button {
+    position: relative;
+    left: 135px;
+}
+.nav-bar-top > a {
+    position: relative;
+    left: 150px;
+}
+
+.search-bar {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #1B1D21;
+    width: 350px;
+    position: relative;
+    left: 135px;
+    padding: 5px;
+    color: white;
+    font: bold;
+}
+
+.search-bar-content {
+    visibility: hidden;
+    position: relative;
+    display: flex;
+}
+
+.currency-img { 
+    top: .25px;
+    margin: .5px;
+    width: 16px;
+ }
+
+.nav-bar-top-item {
+    margin: 5px;
+}
+.nav-bar-top-item:hover {
+    color: white;
+    background-color: #1C1E23;
+}
+
+.nav-bar-main {
+    position: absolute;
+    display: flex;
+    padding: 5px;
+    height: 100%;
+    width: auto;
+    box-shadow: 1.5px 1.5px #1C1E23;
+    background-color: #2b2f36;
+}
+
+.nav-bar-content {
+    text-align: center;
+}
+.nav-bar-content > a > img {
+    height: 25px;
+    width: 25px;
+}
+.nav-bar-content > label {
+    color: white;
+    font-family: sans-serif;
+}
+.nav-bar-content > hr {
+    border-radius: 3px;
+    color: #26282C;
+    margin: .75px;
+    left: auto;
+    right: auto;
+}
+.nav-bar-content > ul {
+    list-style-type: none;
+}
+
+.nav-bar-item {
+    position: relative;
+    border-radius: 1px;
+    top: -1px;
+    text-align: center;
+    padding: 1px;
+    margin: 5px;
+    top: 2px;
+}
+.nav-bar-item:hover {
+    color: white;
+    background-color: #1C1E23;
+}
+
+/* login panel */
+.login-panel {
+    top: 50px;
+    width: 800px;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    border-width: 1.75px;
+    border-radius: 5px;
+    padding: 25px;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background-color: #2C3038;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #1C1E23;
+}
+
+.login-panel > form > p {
+    color: brown;
+    font-family: sans-serif;
+}
+
+.login-panel > form > input {
+    border-style: none;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(75, 75, 75);
+}
+.login-panel > form > input:focus {
+    border-style: none;
+}
+
+.login-panel > form > h3 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.login-form > input:focus {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
