@@ -50,13 +50,25 @@ if (isset($_GET["id"])) {
 </div>
 
 <div class="profile-container">
-
     <div class="profile-about-me">
         <p>About me</p>
-        <p></p>
+        <hr>
+
+        <?php
+        $aboutMeSQL = "SELECT `aboutMe` FROM `users` WHERE `usersId` = " . $_GET["id"] . ";";
+        $aboutMeResult = mysqli_query($conn, $aboutMeSQL);
+        $aboutMepcall = mysqli_num_rows($aboutMeResult);
+
+        if ($aboutMepcall > 0) {
+            while ($aboutMeRow = mysqli_fetch_assoc($aboutMeResult)) {
+                echo '<p>' . $aboutMeRow["aboutMe"] . "</p>";
+            }
+        }
+        ?>
+
         <form action="" method="POST">
             <!--<input name="about-me" type="about-me">-->
-            <textarea name="about-me" type="about-me"></textarea>
+            <textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself!"></textarea>
             <br>
             <button name="submit" class="btn-medium" type="submit">Submit</button>
         </form>
@@ -66,3 +78,4 @@ if (isset($_GET["id"])) {
 <?php
 include "../../includes/footer.php";
 ?>
+<script src="js/global/profile.js"></script>
