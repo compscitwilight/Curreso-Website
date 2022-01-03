@@ -1,0 +1,18 @@
+# To-do (January)
+* Finish the profile page
+* Finish the shop page
+* Add the currency page
+* Add the settings page
+completed: Fix the status feature (COMPLETED Jan 2 2022)
+* Add trading
+* Add captcha to the login and sign up pages
+* Finish the search bar
+
+# Design
+Search design:
+ * User clicks on search bar
+ * Search bar shows different types of content with the search query (users, items)
+ * User searchs and clicks the content type
+ * User is redirected to a search page, with a ?type=contentType and ?search=query at the end of the URL
+ * Page shows all of the content that corresponds with the query and the type
+
