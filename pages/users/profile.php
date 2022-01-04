@@ -3,9 +3,11 @@ require_once "../../includes/inc/dbh.inc.php";
 include "../../includes/header.php";
 
 if (isset($_GET["id"])) {
-    if ($_GET["id"] == "" || !$_GET["id"]) {
+    if ($_GET["id"] == "") {
         header("LOCATION: /pages/users/profile.php?id=" . $_SESSION["userid"]);
     }
+} else {
+    header("LOCATION: /pages/users/profile.php?id=" . $_SESSION["userid"]);
 }
 ?>
 
