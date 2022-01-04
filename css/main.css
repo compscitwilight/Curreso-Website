@@ -293,6 +293,52 @@ a {
     width: 86px;
 }
 
+/* shop item */
+.shop-itempg-container {
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 2.5px;
+    width: 25%;
+    height: 25%;
+    left: 22.5%;
+}
+.shop-itempg-container > h3 {
+    vertical-align: top;
+    color: white;
+    margin: 10px;
+    font-family: sans-serif;
+}
+.shop-itempg-container > img {
+    display: block;
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+.shop-itempg-container > form > button {
+    position: relative;
+    top: 22.5%;
+    left: 210%;
+}
+
+.item-price-display {
+    position: inherit;
+    top: 7.5%;
+    right: 12.25%;
+    color: orange;
+}
+
+.item-value-display {
+    position: inherit;
+    top: 15%;
+    right: 8.5%;
+    color: green;
+}
+
 /* admin panel */
 .admin-panel {
     margin: 1.5px;
