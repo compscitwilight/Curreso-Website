@@ -33,7 +33,7 @@ if (isset($_GET["id"])) {
 
             // edit profile button
             if ($row["usersId"] == $_SESSION["userid"]) {
-                echo '<form action="" method="POST"><button class="btn-medium" name="submit" type="submit">Edit Profile</button></form>';
+                echo '<form action="" method="POST"><button id="edit-btn" class="btn-medium" name="submit" type="submit">Edit Profile</button></form>';
             };
 
             // join date
@@ -66,7 +66,7 @@ if (isset($_GET["id"])) {
         }
         ?>
 
-        <form action="" method="POST">
+        <form id="about-me-edit" action="" method="POST">
             <!--<input name="about-me" type="about-me">-->
             <textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself"></textarea>
             <br>
