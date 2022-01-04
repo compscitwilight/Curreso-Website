@@ -1,6 +1,5 @@
 <?php
 include "../../includes/header.php";
-include "../../includes/inc/functions.inc.php";
 include "./includes/search.php";
 ?>
 
@@ -8,7 +7,9 @@ include "./includes/search.php";
     <ul class="shop-container-content">
         <li class="shop-list-item">
             <a href="/pages/shop/items/item.php?id=">test</a>
-            <p></p>
+            <?php
+            echo '<p>BX$' . abbreviateNumber(100000) . '</p>';
+            ?>
             <img src="/images/coin.png">
         </li>
     </ul>
