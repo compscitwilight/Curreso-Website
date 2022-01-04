@@ -3,6 +3,6 @@
         <p>Bloxiso</p>
     </footer>-->
 </body>
-<script src="js/global/profile.js"></script>
+<script src="/js/global/profile.js"></script>
 
 </html>
