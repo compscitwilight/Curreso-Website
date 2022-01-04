@@ -6,8 +6,12 @@ if (isset($_GET["id"])) {
     if ($_GET["id"] == "" || !$_GET["id"]) {
         header("LOCATION: /pages/users/inventory.php?id=" . $_SESSION["userid"]);
     }
+} else {
+    header("LOCATION: /pages/users/inventory.php?id=" . $_SESSION["userid"]);
 }
 ?>
+
+
 
 <?php
 include "../../includes/footer.php";
