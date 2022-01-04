@@ -67,8 +67,17 @@ if (isset($_GET["id"])) {
         ?>
 
         <form id="about-me-edit" action="" method="POST">
-            <!--<input name="about-me" type="about-me">-->
-            <textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself"></textarea>
+            <?php
+            $aboutMeEditSQL = "SELECT `aboutMe` FROM `users` WHERE `usersId` = " . $_GET["id"] . ";";
+            $aboutMeEditResult = mysqli_query($conn, $aboutMeEditSQL);
+            $aboutMeEditpcall = mysqli_num_rows($aboutMeEditResult);
+
+            if ($aboutMeEditpcall > 0) {
+                while ($aboutMeEditRow = mysqli_fetch_assoc($aboutMeEditResult)) {
+                    echo '<textarea name="about-me" value="' . $aboutMeEditRow["aboutMe"] . '" type="about-me" maxlength="256" placeholder="Tell us about yourself!"></textarea>';
+                }
+            }
+            ?>
             <br>
             <button name="submit" class="btn-medium" type="submit">Submit</button>
         </form>
