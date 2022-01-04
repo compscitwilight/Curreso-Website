@@ -166,7 +166,7 @@ a {
     margin: 2.5px;
     width: 50%;
     height: 50%;
-    left: 156px;
+    left: 22.5%;
 }
 .profile-container > h3 {
     display: flex;
@@ -212,6 +212,20 @@ a {
 }
 .profile-about-me > form > button {
     margin: 3px;
+}
+
+/* inventory */
+.inventory-container {
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 2.5px;
+    width: 50%;
+    height: auto;
+    left: 22.5%;
 }
 
 /* admin panel */
