@@ -66,7 +66,7 @@ if (isset($_GET["id"])) {
         }
         ?>
 
-        <form id="about-me-edit" action="" method="POST">
+        <form id="about-me-edit" action="/includes/inc/postaboutme.inc.php" method="POST">
             <?php
             $aboutMeEditSQL = "SELECT `aboutMe` FROM `users` WHERE `usersId` = " . $_GET["id"] . ";";
             $aboutMeEditResult = mysqli_query($conn, $aboutMeEditSQL);
