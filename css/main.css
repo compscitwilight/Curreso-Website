@@ -140,6 +140,22 @@ a {
 }
 
 /* profile */
+.profile-head {
+    border-radius: 5px;
+    background-color: #2C3038;
+    margin: 3px;
+    width: 25%;
+    margin: 0 auto;
+}
+.profile-head > h3 {
+    font-family: sans-serif;
+    color: white;
+}
+.profile-head > p {
+    font-family: sans-serif;
+    color: white;
+}
+
 .profile-container {
     display: flex;
     position: absolute;
