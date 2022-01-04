@@ -21,7 +21,9 @@ if (isset($_GET["id"])) {
             echo "<h3>" . $row["usersUid"] . "</h3>";
 
             // status
-            echo '<p>"' . $row["status"] . '"</p>';
+            if ($row["status"] !== "") {
+                echo '<p>"' . $row["status"] . '"</p>';
+            }
 
             // admin icon
             if ($row["isAdmin"] == 1) {
