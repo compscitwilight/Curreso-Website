@@ -33,7 +33,7 @@ if (isset($_GET["error"])) {
     ?>
 
     <form action="/includes/inc/shop/purchase.inc.php" method="POST">
-        <button class="btn-medium" name="purchase" type="purchase">Purchase</button>
+        <button class="btn-medium" name="<?php $_GET["id"] ?>" type="purchase">Purchase</button>
     </form>
 </div>
 
