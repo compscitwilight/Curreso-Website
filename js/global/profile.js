@@ -9,6 +9,6 @@ editProfileButton.addEventListener('click', () => {
         editingProfile = true;
 
         aboutMeText.style.visibility = "hidden";
-        aboutMeEdit.style.visibility = "visbile";
+        aboutMeEdit.style.visibility = "visible";
     }
 })
