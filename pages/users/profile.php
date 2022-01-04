@@ -68,7 +68,7 @@ if (isset($_GET["id"])) {
 
         <form action="" method="POST">
             <!--<input name="about-me" type="about-me">-->
-            <textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself!"></textarea>
+            <textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself"></textarea>
             <br>
             <button name="submit" class="btn-medium" type="submit">Submit</button>
         </form>
