@@ -20,6 +20,9 @@ if (isset($_GET["id"])) {
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<h3>" . $row["usersUid"] . "</h3>";
 
+            // status
+            echo '<p>"' . $row["status"] . '"</p>';
+
             // admin icon
             if ($row["isAdmin"] == 1) {
                 echo '<img class="profile-container-admin" src="/images/profile/admin-logo.jpg">';
