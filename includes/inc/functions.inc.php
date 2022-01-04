@@ -164,3 +164,35 @@ function postAboutMe($conn, $aboutMe)
 
     exit();
 }
+
+function hasSufficientCoins($conn, $id)
+{
+    $returnResult = null;
+
+    $sql = "SELECT `coins` FROM `users` WHERE `usersId` = " . $_SESSION["userid"] . ";";
+    $result = mysqli_query($conn, $sql);
+    $pcall = mysqli_num_rows($result);
+
+    $itemSql = "SELECT `itemsPrice` FROM `items` WHERE `itemsId` = " . $id . ";";
+    $itemResult = mysqli_query($conn, $itemSql);
+    $itempcall = mysqli_num_rows($itemResult);
+
+    if ($pcall > 0 and $itempcall > 0) {
+        while ($itemRow = mysqli_fetch_assoc($itemResult)) {
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                if ($row["coins"] >= $itemRow["itemsPrice"]) {
+                    $returnResult = true;
+                } else {
+                    $returnResult = false;
+                }
+            }
+        }
+    };
+
+    return $returnResult;
+}
+
+function purchaseItem($conn)
+{
+}
