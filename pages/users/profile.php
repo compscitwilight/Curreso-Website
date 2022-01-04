@@ -31,9 +31,10 @@ if (isset($_GET["id"])) {
             };
 
             // trade & add friend button
-            if ($row["usersId"] != $_SESSION["userid"]) {
-                echo '<form action="" method="POST"><button class="btn-medium" name="submit" type="submit">Trade</button></form>';
-                echo '<form action="" method="POST"><button class="btn-medium" name="submit" type="submit">Add Friend</button</form>';
+            if ($row["usersId"] !== $_SESSION["userid"]) {
+                // create 2 buttonbs, add friend and trade
+                echo '<form action="" method="POST"><button class="btn-medium">Trade</button></form>';
+                echo '<form action="" method="POST"><button class="btn-medium">Add Friend</button></form>';
             }
 
             // edit profile button
