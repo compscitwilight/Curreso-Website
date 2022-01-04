@@ -11,7 +11,9 @@ if (isset($_GET["id"])) {
 }
 ?>
 
+<div class="inventory-container">
 
+</div>
 
 <?php
 include "../../includes/footer.php";
