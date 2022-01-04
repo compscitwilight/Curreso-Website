@@ -135,6 +135,7 @@ function loginUser($conn, $username, $pwd)
         $_SESSION["useruid"] = $uex["usersUid"];
         $_SESSION["status"] = $uex["status"];
         $_SESSION["isadmin"] = $uex["isAdmin"];
+        $_SESSION["aboutme"] = $uex["aboutMe"];
         $_SESSION["coins"] = $uex["coins"];
 
         header("LOCATION: /pages/home.php");
@@ -157,7 +158,7 @@ function setStatus($conn, $status)
 
 function postAboutMe($conn, $aboutMe)
 {
-    $sql = "UPDATE `users` SET `aboutMe` = " . $aboutMe . "WHERE `usersId = " . $_SESSION["userid"] . ";";
+    $sql = "UPDATE `users` SET `aboutMe` = " . $aboutMe . "WHERE `usersId` = " . $_SESSION["userid"] . ";";
     mysqli_query($conn, $sql);
 
     header("LOCATION: /pages/users/profile.php?id=" . $_SESSION["userid"]);
