@@ -5,7 +5,7 @@ include "../includes/header.php";
 <div class="home-panel">
     <?php
     if (isset($_SESSION["useruid"])) {
-        echo "<h2>Welcome, " . $_SESSION["useruid"] . "!</h2>";
+        echo '<h2>Hello, <a href="/pages/users/profile.php?id=' . $_SESSION["userid"] . '">' . $_SESSION["useruid"] . '</a></h2>';
         echo '<form action="/includes/inc/setstatus.inc.php" method="POST"><input value="" name="status" type="status" placeholder="What are you up to?" required><button class="btn-medium" name="submit" type="submit">Set</button>
         ';
     }
