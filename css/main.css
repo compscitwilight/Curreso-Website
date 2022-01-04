@@ -286,6 +286,9 @@ a {
 .shop-list-item > a {
     display: block;
 }
+.shop-list-item > p {
+    color: orange;
+}
 .shop-list-item > img {
     width: 86px;
 }
