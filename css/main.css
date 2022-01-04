@@ -260,6 +260,36 @@ a {
     left: 22.5%;
 }
 
+.shop-container-content {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 2.5px;
+    width: 50%;
+    height: auto;
+    left: 22.5%;
+}
+
+.shop-list-item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: auto;
+    background-color: #1B1D21;
+    height: auto;
+}
+.shop-list-item > a {
+    display: block;
+}
+.shop-list-item > img {
+    width: 86px;
+}
+
 /* admin panel */
 .admin-panel {
     margin: 1.5px;
