@@ -61,7 +61,7 @@ if (isset($_GET["id"])) {
 
         if ($aboutMepcall > 0) {
             while ($aboutMeRow = mysqli_fetch_assoc($aboutMeResult)) {
-                echo '<p>' . $aboutMeRow["aboutMe"] . "</p>";
+                echo '<p id="about-me-text">' . $aboutMeRow["aboutMe"] . "</p>";
             }
         }
         ?>
@@ -74,7 +74,7 @@ if (isset($_GET["id"])) {
 
             if ($aboutMeEditpcall > 0) {
                 while ($aboutMeEditRow = mysqli_fetch_assoc($aboutMeEditResult)) {
-                    echo '<textarea name="about-me" value="' . $aboutMeEditRow["aboutMe"] . '" type="about-me" maxlength="256" placeholder="Tell us about yourself!"></textarea>';
+                    echo '<textarea name="about-me" type="about-me" maxlength="256" placeholder="Tell us about yourself!">' . $aboutMeEditRow["aboutMe"] . '</textarea>';
                 }
             }
             ?>
