@@ -66,7 +66,7 @@ if (isset($_GET["id"])) {
         }
         ?>
 
-        <form id="about-me-edit" action="/includes/inc/postaboutme.inc.php" method="POST">
+        <form id="about-me-edit" action="/includes/inc/profile/postaboutme.inc.php" method="POST">
             <?php
             $aboutMeEditSQL = "SELECT `aboutMe` FROM `users` WHERE `usersId` = " . $_GET["id"] . ";";
             $aboutMeEditResult = mysqli_query($conn, $aboutMeEditSQL);
@@ -79,7 +79,7 @@ if (isset($_GET["id"])) {
             }
             ?>
             <br>
-            <button name="edit" class="btn-medium" type="submit">Submit</button>
+            <button name="submit" class="btn-medium" type="submit">Submit</button>
         </form>
     </div>
 </div>
