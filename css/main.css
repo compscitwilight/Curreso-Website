@@ -247,6 +247,19 @@ a {
     background-color: #1B1D21;
 }
 
+.shop-container {
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #2C3038;
+    box-shadow: 1px 1px 1px 1px #1C1E23;
+    margin: 2.5px;
+    width: 50%;
+    height: auto;
+    left: 22.5%;
+}
+
 /* admin panel */
 .admin-panel {
     margin: 1.5px;
