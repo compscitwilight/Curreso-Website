@@ -1,9 +1,9 @@
 # To-do (January)
-inProgress: * Finish the profile page (STARTED Jan 3 2022)
+completed: * Finish the profile page (STARTED Jan 3 2022, COMPLETED Jan 4 2022)
 inProgress: * Finish the shop page (STARTED Jan 4 2022)
 * Add the currency page
 * Add the settings page
-completed: Fix the status feature (COMPLETED Jan 2 2022)
+completed: Fix the status feature (STARTED Jan 1 2022, COMPLETED Jan 2 2022)
 * Add trading
 * Add captcha to the login and sign up pages
 * Finish the search bar
@@ -15,4 +15,3 @@ Search design:
  * User searchs and clicks the content type
  * User is redirected to a search page, with a ?type=contentType and ?search=query at the end of the URL
  * Page shows all of the content that corresponds with the query and the type
-
