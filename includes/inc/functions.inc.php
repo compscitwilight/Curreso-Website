@@ -154,3 +154,13 @@ function setStatus($conn, $status)
 
     exit();
 }
+
+function postAboutMe($conn, $aboutMe)
+{
+    $sql = "UPDATE `users` SET `aboutMe` = " . $aboutMe . "WHERE `usersId = " . $_SESSION["userid"] . ";";
+    mysqli_query($conn, $sql);
+
+    header("LOCATION: /pages/users/profile.php?id=" . $_SESSION["userid"]);
+
+    exit();
+}
