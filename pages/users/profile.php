@@ -50,7 +50,7 @@ if (isset($_GET["id"])) {
             }
         }
     } else {
-        echo '<h3>(ERROR)</h3>';
+        header("LOCATION: /pages/error.php?error=404");
     }
     ?>
 </div>
