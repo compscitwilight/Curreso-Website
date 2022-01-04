@@ -228,6 +228,23 @@ a {
     left: 22.5%;
 }
 
+/* shop */
+.shop-search {
+    position: relative;
+    background-color: #2C3038;
+    margin: 5px;
+    top: 15%;
+    width: 30%;
+    margin: 0 auto;
+}
+.shop-search > form > input {
+    border-style: none;
+    border-radius: 5px;
+    padding: 2.75px;
+    color: white;
+    background-color: #1B1D21;
+}
+
 /* admin panel */
 .admin-panel {
     margin: 1.5px;
