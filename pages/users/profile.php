@@ -86,4 +86,5 @@ if (isset($_GET["id"])) {
 
 <?php
 include "../../includes/footer.php";
+echo '<script src="/js/global/profile.js"></script>';
 ?>
