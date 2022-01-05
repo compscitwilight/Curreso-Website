@@ -10,6 +10,7 @@ if (!isset($_GET["id"])) {
 
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "insufficientFunds") {
+        echo '<script>alert("You have insufficient funds.")</script>';
     }
 }
 ?>
@@ -33,7 +34,10 @@ if (isset($_GET["error"])) {
     ?>
 
     <form action="/includes/inc/shop/purchase.inc.php" method="POST">
-        <button class="btn-medium" name="<?php $_GET["id"] ?>" type="purchase">Purchase</button>
+        <?php
+        echo '<input name="id" type="id" value="' . $_GET["id"] . '" disabled>';
+        ?>
+        <button class="btn-medium" name="purchase" type="purchase">Purchase</button>
     </form>
 </div>
 
