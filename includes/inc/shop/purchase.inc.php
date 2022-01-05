@@ -1,6 +1,7 @@
 <?php
-echo $_GET["id"];
-if (isset($_POST["purchase"]) and isset($_POST["id"])) {
+
+/*
+if (isset($_POST["purchase"]) and isset($_GET["id"])) {
     require_once "../dbh.inc.php";
     require_once "../functions.inc.php";
 
@@ -14,3 +15,4 @@ if (isset($_POST["purchase"]) and isset($_POST["id"])) {
         exit();
     }
 }
+*/
