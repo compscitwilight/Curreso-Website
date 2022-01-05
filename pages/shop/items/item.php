@@ -35,7 +35,22 @@ if (isset($_GET["error"])) {
 
     <form <?php echo 'action="/includes/inc/shop/purchase.inc.php?id="' . $_GET["id"] ?> method="POST">
         <input name="id" type="id" disabled>
-        <button class="btn-medium" name="purchase" type="purchase">Purchase</button>
+
+        <?php
+        $onSalePHP = "SELECT `onSale` FROM `items` WHERE `itemsId` = " . $_GET["id"];
+        $onSaleResult = mysqli_query($conn, $onSalePHP);
+        $onSalepcall = mysqli_num_rows($onSaleResult);
+
+        if ($onSalepcall > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                if ($row["onSale"] = 1) {
+                    echo '<button class="btn-medium" name="purchase" type="purchase">Purchase</button>';
+                } else {
+                    echo '<button class="btn-medium">This item is not for sale.</button>';
+                }
+            }
+        }
+        ?>
     </form>
 </div>
 
