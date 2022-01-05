@@ -169,11 +169,11 @@ function hasSufficientCoins($conn, $id)
 {
     $returnResult = null;
 
-    $sql = "SELECT `coins` FROM `users` WHERE `usersId` = " . $_SESSION["userid"] . ";";
+    $sql = "SELECT * FROM `users` WHERE `usersId` = " . $_SESSION["userid"] . ";";
     $result = mysqli_query($conn, $sql);
     $pcall = mysqli_num_rows($result);
 
-    $itemSql = "SELECT `itemsPrice` FROM `items` WHERE `itemsId` = " . $id . ";";
+    $itemSql = "SELECT * FROM `items` WHERE `itemsId` = " . $id . ";";
     $itemResult = mysqli_query($conn, $itemSql);
     $itempcall = mysqli_num_rows($itemResult);
 
