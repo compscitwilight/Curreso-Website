@@ -319,6 +319,10 @@ a {
     height: 100px;
     width: 100px;
 }
+.shop-itempg-container > form > input {
+    width: 0%;
+    visibility: hidden;
+}
 .shop-itempg-container > form > button {
     position: relative;
     top: 22.5%;
