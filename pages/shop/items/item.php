@@ -33,7 +33,7 @@ if (isset($_GET["error"])) {
     }
     ?>
 
-    <form action="/includes/inc/shop/purchase.inc.php" method="POST">
+    <form <?php echo 'action="/includes/inc/shop/purchase.inc.php?id="' . $_GET["id"]; ?> method="POST">
         <?php
         echo '<input name="id" type="id" value="' . $_GET["id"] . '" disabled>';
         ?>
