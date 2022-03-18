@@ -1,9 +1,9 @@
 <?php
 
-$serverName = "localhost";
-$dbUsername = "root";
+$serverName = "YOUR_DATABASE_NAME";
+$dbUsername = "YOUR_DATABASE_USERNAME";
 $dbPassword = "";
-$dbName = "bloxiso";
+$dbName = "YOUR_DATABASE_NAME";
 
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
 
