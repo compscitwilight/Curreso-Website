@@ -14,7 +14,7 @@ if (isset($_SESSION["userid"])) {
         <button name="submit" class="btn btn-medium" id="login-btn" type="submit">Login</button>
 
         <a href="/pages/signup.php">
-            <p>Don't have a Bloxiso account? Register here.</p>
+            <p>Don't have an account? Register here.</p>
         </a>
 
         <?php
